@@ -936,6 +936,24 @@
   text-align: center;
 }
 
+.category-button.nb {
+  text-decoration: none;
+}
+
+.category-button.nb.w--current {
+  -webkit-transition: box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.category-button.nb.w--current:hover {
+  box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+}
+
 .text-block {
   font-family: Roboto, sans-serif;
   color: #fff;
